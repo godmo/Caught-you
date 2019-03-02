@@ -34,7 +34,7 @@ public class DemoActivity extends Activity implements
 		setContentView(R.layout.main);
 		
 		String fileName = "save_file";
-		final SharedPreferences sharedPreferences = getSharedPreferences(fileName,MODE_MULTI_PROCESS);//�]�w�s���v��
+		final SharedPreferences sharedPreferences = getSharedPreferences(fileName,MODE_MULTI_PROCESS);
 		String email = sharedPreferences.getString("email", "");//每個欄位存在sharedPreferences裡面的名稱
 		String password = sharedPreferences.getString("password", "");
 		String email2 = sharedPreferences.getString("email2", "");
@@ -51,10 +51,10 @@ public class DemoActivity extends Activity implements
 		//////////////////////////////////////////////////////
 		 save.setOnClickListener(new View.OnClickListener() {   	///   
 		 public void onClick(View view) {                           ///
-		 //���o��SharedPreferences.Editor����                                                               			///
+		 //SharedPreferences.Editor                                                               			///
 		 SharedPreferences.Editor editor = sharedPreferences.edit(); ///
 		 															///
-		 //�]�wkey=mystring����										///			
+		 									///			
 		 EditText et = (EditText) findViewById(R.id.editText1);		///
 		 EditText et2 = (EditText) findViewById(R.id.editText2);	///
 		 EditText et3 = (EditText) findViewById(R.id.editText3);	///
