@@ -217,7 +217,7 @@ public class CameraView extends Activity implements SurfaceHolder.Callback,
 				}
 				setResult(585);
 				
-				/* �[�JStrictMode�קK�o�� android.os.NetworkOnMainThreadException */  
+				  
 		        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()  
 		          .detectDiskReads().detectDiskWrites().detectNetwork()  
 		          .penaltyLog().build());  
